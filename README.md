@@ -22,5 +22,11 @@
 * `conan.cmake` invokes conan at the CLI with those settings
 * The `conanbuildinfo.cmake` file is generated
 * It can be found by clicking the following menu options: 
-** `Cmake` -> `Cache` -> `Open Cache Folder` -> `CMakeLists.txt`
 
+	`Cmake` -> `Cache` -> `Open Cache Folder` -> `CMakeLists.txt`
+
+## Notes
+During my last tests, this required one modification of the default values in CMakeSettings.json: 
+* `"cmakeCommandArgs": "-DCMAKE_BUILD_TYPE=Debug"`
+
+This is needed to help `conan.cmake` properly detect the build type, because it wasn't working when I tested.  Although, testing was done in the very first release of Visual Studio for Cmake's. 
