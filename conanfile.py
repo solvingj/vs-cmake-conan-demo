@@ -7,7 +7,5 @@ class VsCmakeConanDemo(ConanFile):
   author = "SolvingJ/Bincrafters"
   generators = "cmake"
   url = "https://github.com/solvingj/vs-cmake-conan-demo"
-  requires = "jsonformoderncpp/2.1.1@vthiery/stable", \
-        "OpenSSL/1.0.2l@conan/stable", \
-		"Boost.Asio/1.64.0@bincrafters/stable"
+  requires = "OpenSSL/1.0.2l@conan/stable", "Boost.Asio/1.64.0@bincrafters/stable"
 
