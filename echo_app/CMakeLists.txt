@@ -10,12 +10,12 @@ add_executable(${PROJECT_NAME}_server
 )
 
 target_link_libraries(${PROJECT_NAME}_client 
-	CONAN_PKG::Boost.Asio
-	CONAN_PKG::Boost.Bind
+	CONAN_PKG::boost_asio
+	CONAN_PKG::boost_bind
 )
 target_link_libraries(${PROJECT_NAME}_server 
-	CONAN_PKG::Boost.Asio
-	CONAN_PKG::Boost.Bind
+	CONAN_PKG::boost_asio
+	CONAN_PKG::boost_bind
 )
 target_include_directories(${PROJECT_NAME}_client
     PUBLIC 
